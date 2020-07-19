@@ -1,0 +1,453 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap");
+
+// Mei - The Road , About , Hero
+$S: 768px;
+$M: 1024px;
+$L: 1600px;
+$green: #2f8886;
+$black: #333333;
+$soft-green: #e8f2f1;
+$soft-gray: #f5f5f5;
+$white:#ffff;
+$aling-p: justify;
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+
+// Headings
+p {
+  font-size: 1rem;
+  line-height: 20px;
+  padding-bottom: 1em;
+}
+
+h3 {
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+header {
+  background-image: url(../img/hero.png);
+  padding: 2em;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 260px;
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  @media (min-width: $S) {
+    height: 658px;
+    padding: 4em 5em 0 5em;
+
+    h1 {
+      font-size: 64px;
+    }
+  }
+}
+
+.summary {
+  padding: 2rem;
+  color: $white;
+
+  p:first-child {
+    display: none;
+  }
+
+  p:nth-child(2) {
+    padding-bottom: 1rem;
+  }
+
+  a {
+    color: $white;
+    border: 1px solid white;
+    padding: 1em 3em;
+    position: absolute;
+  }
+
+  // display: none;
+}
+
+@media (min-width:$S) {
+  .summary {
+    padding: 0 5em;
+
+    p:nth-child(2) {
+      color: $white;
+      position: absolute;
+      top: 50%;
+    }
+
+
+
+    a:first-child {
+      left: 0;
+      top: 149%;
+      padding: 1.5rem 3rem;
+    }
+
+    a:nth-child(2) {
+
+      // left: 0;
+      left: 88%;
+      top: 149%;
+    }
+  }
+
+
+}
+
+@media (max-width:$S) {
+  .summary {
+    top: 8%;
+    position: absolute;
+  }
+
+  a:first-child {
+    left: 35%;
+    top: 75%;
+  }
+
+  a:nth-child(2) {
+    left: 37%;
+    top: 149%;
+  }
+
+}
+
+
+.preamble {
+  padding: 3em 2em;
+
+  h3 {
+    color: $green;
+    font-size: 30px;
+  }
+
+  p {
+    color: $black;
+  }
+
+  @media (min-width: 768px) {
+    padding: 4em 5em;
+  }
+}
+
+.main {
+  .explanation {
+    background-color: #fffaf2;
+    padding: 3em 2em;
+
+    @media (min-width: 768px) {
+      padding: 4em 5em;
+    }
+
+    h3 {
+      color: $green;
+      font-size: 30px;
+    }
+  }
+}
+
+// End ...
+
+// Cristhians - Participation , Benefits & Requirements , By David
+.participation {
+  h3 {
+    color: $green;
+    font-size: 30px;
+  }
+
+  padding: 3em 2em;
+
+  p {
+    width: 100%;
+    text-align: $aling-p;
+  }
+
+  @media (min-width: 768px) {
+    padding: 4em 5em;
+
+    background-image: url(../img/people-discussion.png);
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+    background-size: 300px;
+
+    p {
+      width: 50%;
+    }
+  }
+}
+
+.benefits {
+  background-color: #fffaf2;
+
+  h3 {
+    color: $green;
+    font-size: 30px;
+  }
+
+  padding: 3em 2em;
+
+  p {
+    width: 100%;
+    text-align: $aling-p;
+  }
+
+  @media (min-width: 768px) {
+    padding: 4em 5em;
+
+    background-image: url(../img/BigShoesHero.png);
+    background-repeat: no-repeat;
+    background-position: 15% 50%;
+    background-size: 300px;
+
+    h3,
+    p {
+      width: 50%;
+      padding-left: 50%;
+    }
+  }
+}
+
+.requirements {
+  padding: 3em 2em 0;
+  background-color: $soft-green;
+
+  h3 {
+    color: $green;
+    font-size: 30px;
+  }
+
+  p {
+    width: 100%;
+    text-align: $aling-p;
+  }
+
+  p:last-child {
+    padding: 4em 2em 4em 5em;
+    margin-left: -5em;
+    margin-right: -5em;
+    background-color: $soft-gray;
+  }
+
+  @media (min-width: 768px) {
+    padding: 4em 5em 0;
+
+    // p {
+    //   border: 1px solid red;
+    // }
+
+    p:last-child {
+      padding: 4em 5em;
+      margin-left: -5em;
+      margin-right: -5em;
+    }
+  }
+}
+
+// Hector - Footer , Asidebar
+footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 3em 2em;
+
+  a {
+
+    padding: 1.5em;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: transparent;
+    transition: opacity .5s, transform .5s;
+
+  }
+
+  a:hover {
+    transition: opacity .5s, transform .5s;
+    transform: rotate(360deg) scale(1.2);
+
+  }
+
+}
+
+.zen-validate-html {
+  background-image: url(../icons/html.png);
+
+}
+
+.zen-validate-css {
+  background-image: url(../icons/css.png);
+
+}
+
+.zen-license {
+  background-image: url(../icons/cc.png);
+
+}
+
+.zen-accessibility {
+  background-image: url(../icons/accessibility.png);
+
+}
+
+.zen-github {
+  background-image: url(../icons/github.png);
+
+}
+
+.wrapper {
+
+  display: grid;
+  grid-template-areas: "selection"
+    "archives"
+    "resources";
+  width: 100%;
+
+  @media (min-width: 768px) {
+    grid-template-areas: "selection   archives"
+      "selection   resources";
+
+  }
+
+  h3 {
+    font-weight: bolder;
+    font-size: 30px;
+    color: $black;
+    margin-bottom: 1em;
+  }
+
+  ul li {
+    padding: 0.5em 0;
+  }
+
+
+  a {
+    text-decoration: none;
+    color: $black;
+
+  }
+
+  abbr {
+    text-decoration: none;
+  }
+
+
+  li>a:first-child {
+    font-weight: bolder;
+  }
+}
+
+.design-selection {
+  grid-area: selection;
+  color: $black;
+  padding: 2em 4em;
+
+  @media (min-width: 768px) {
+    justify-self: center;
+
+  }
+
+  h3::before {
+    content: "\1F50D";
+    padding-right: 10px;
+
+  }
+
+
+}
+
+.design-selection::after {
+  display: block;
+  content: 'Choose One';
+  color: $white;
+  padding: 1rem 2rem;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  background-color: $green;
+  animation:
+    pulse 3s ease infinite alternate,
+    nudge 5s linear infinite alternate;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 60px solid $white;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    background-color: $green;
+  }
+
+  50% {
+    background-color: orange;
+  }
+}
+
+@keyframes nudge {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(150px, 0);
+  }
+
+  80% {
+    transform: translate(-150px, 0);
+  }
+}
+
+.design-archives {
+  grid-area: archives;
+
+  h3:before {
+    content: "\1F4C1";
+    padding-right: 10px;
+
+  }
+}
+
+.zen-resources {
+  grid-area: resources;
+
+  h3 {
+    margin-top: 1em;
+  }
+
+  h3:before {
+    content: "\1F4BB";
+    padding-right: 10px;
+
+  }
+}
+
+.design-archives,
+.zen-resources {
+  padding: 2em 4em;
+  background-color: $green;
+
+  a {
+    color: white;
+  }
+
+
+  h3 {
+    color: white;
+  }
+}
